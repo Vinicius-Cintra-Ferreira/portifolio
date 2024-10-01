@@ -1,26 +1,34 @@
 <template>
-  <v-app>
-    <HeaderBar />
-    <v-container class="fill-height ">
-      <v-row class="">
-        <v-col cols="12" class="pa-0 text-center">
-          <h3 class="text-h3 title-font variant">
-            Olá, eu sou <span class="gradiant title-font">Vinicius Cintra</span>
-          </h3>
-          <p class="text-h5 paragraph-font">
-            Desenvolvedor web front-end
-          </p>
-          
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-app>
+  <v-container id="home" class="h-350 d-flex flex-column">
+    <v-row >
+      <v-col class="pa-0 text-center" height="100">
+        <h3 class="text-h3 title-font variant">
+          Olá, eu sou <span class="gradiant title-font">Vinicius Cintra</span>
+        </h3>
+      </v-col>
+    </v-row>
+    <v-row>
+      <v-col class="pa-0 text-center">
+        <p class="text-h5 paragraph-font"> Desenvolvedor web front-end </p>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script setup>  
 </script>
 
 <style scoped>
+  .h-350 {
+    height: 350px;
+    min-height: 350px;
+    max-height: 350px;
+  }
+
+
+
+
+
   /* Importação da font - Primal */
   @font-face {
     font-family: "Primal";
@@ -28,6 +36,10 @@
     font-weight: normal;
     font-style: normal;
     color: #c6d8d3;
+  }
+
+  .title-font {
+    font-family: "Primal", sans-serif;
   }
 
   .gradiant {
@@ -39,11 +51,7 @@
   }
   
   .gradiant:hover {
-    filter: drop-shadow(0 0 16px #7371FC);
-  }
-
-  .title-font {
-    font-family: "Primal", sans-serif;
+    filter: drop-shadow(0 0 8px #7371FC);
   }
   
   .paragraph-font {

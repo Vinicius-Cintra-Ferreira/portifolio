@@ -1,24 +1,27 @@
 <template>
-  <v-toolbar color="#211D26">
-    <v-img src="../assets/logo.svg" class="logo ml-10" max-height="45" max-width="45"></v-img>
+  <v-toolbar color="transparent">
+    <v-container class="d-flex pa-0">
+    <v-toolbar-title>
+      <v-img src="../assets/logo.svg" class="logo" max-height="45" max-width="45"></v-img>
+    </v-toolbar-title>
     <v-spacer></v-spacer>
-    <nav>
-
-    </nav>
+    <v-toolbar-items>
+      <v-button-navigation class="d-flex">
+        <v-btn ><a href="#home"> Home </a></v-btn>
+        <v-btn ><a href="#projetos"> Projetos </a></v-btn>
+        <v-btn ><a href="#certificacoes"> Certificações </a></v-btn>
+      </v-button-navigation>
+    </v-toolbar-items>
+    </v-container>
   </v-toolbar>
 </template>
 
-<script setup>  
+<script setup>
 </script>
 
 <style scoped>
-  .logo{
-    transition: filter 0.300ms;
-  }
-  .logo:hover {
-    filter: drop-shadow(0 0 16px #7371FC);
-  }
-  nav ul {
-    list-style: none;
+  a {
+    text-decoration: none;
+    color: #c6d8d3;
   }
 </style>
