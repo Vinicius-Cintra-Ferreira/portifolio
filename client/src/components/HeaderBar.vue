@@ -8,6 +8,7 @@
     <v-toolbar-items>
       <v-button-navigation class="d-flex">
         <v-btn ><a href="#home"> Home </a></v-btn>
+        <v-btn ><a href="#sobre"> Experiência </a></v-btn>
         <v-btn ><a href="#projetos"> Projetos </a></v-btn>
         <v-btn ><a href="#certificacoes"> Certificações </a></v-btn>
       </v-button-navigation>
